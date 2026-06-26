@@ -32,6 +32,11 @@ The system consists of an external battery to represent a portable emergency cha
 | Stateflow |
 
 ## System-Level Architecture (Block Level)
+## System-Level Architecture
+
+The figure below illustrates the closed-loop control system architecture of the portable EV charging system.
+
+![Control System Block](images/Control%20System%20Block.png)
 
 ## Project Features
 

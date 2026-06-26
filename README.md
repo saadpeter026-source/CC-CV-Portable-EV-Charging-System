@@ -12,9 +12,8 @@ The system consists of an external battery to represent a portable emergency cha
 * Test the charging system using a commercial Panasonic lithium-ion cell.
 * Test the charging system using a larger EV battery based on the 2024 Cadillac Lyriq battery specifications.
 * Monitor the thermal behavior of the IGBT and EV battery during the charging process.
-* 
 ## Repository Structure
-images/ – System diagrams, subsystem figures, and simulation screenshots.
+- images/ – System diagrams, subsystem figures, and simulation screenshots.
 tests/ – Simulation test cases and validation results.
 data/ – Battery parameter spreadsheets and supporting datasets.
 docs/ – Project presentation and additional documentation.

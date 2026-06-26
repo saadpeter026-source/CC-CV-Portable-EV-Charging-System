@@ -52,5 +52,12 @@ https://ev-database.org/car/2243/Cadillac-Lyriq-600-E4
 Panasonic Battery Group – NCR18500 Lithium-Ion Battery Datasheet
 https://www.alldatasheet.com/datasheet-pdf/pdf/597037/PANASONICBATTERY/NCR18500.html
 
+MathWorks Documentation – Buck Converter Thermal Model
+https://www.mathworks.com/help/sps/ug/buck-converter-thermal-model.html
+
+MathWorks Documentation – Battery State of Health Estimation
+https://www.mathworks.com/help/simscape-battery/ug/battery-state-of-health-estimation.html
+
+
 
 

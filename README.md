@@ -36,8 +36,6 @@ The figure below illustrates the closed-loop control system architecture of the 
 
 ![Control System Block](images/Control%20System%20Block.png)
 
-## Project Features
-
 ## Simulation Results
 
 ## Testing and Verification

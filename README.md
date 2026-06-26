@@ -18,7 +18,7 @@ The system consists of an external battery to represent a portable emergency cha
 * tests/ – Simulation test cases and validation results.
 * data/ – Battery parameter spreadsheets and supporting datasets.
 * docs/ – Project presentation and additional documentation.
-- src/
+ - src/
 * main.m – Main MATLAB script used to run the project.
 * Portable_Charging_System.slx – Main Simulink model of the portable EV charging system.
 

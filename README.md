@@ -46,4 +46,7 @@ The figure below illustrates the closed-loop control system architecture of the 
 MathWorks Documentation – Buck Converter Block
 https://www.mathworks.com/help/sps/ref/buckconverter.html
 
+EV Database – 2024 Cadillac Lyriq 600 E4 Specifications
+https://ev-database.org/car/2243/Cadillac-Lyriq-600-E4
+
 

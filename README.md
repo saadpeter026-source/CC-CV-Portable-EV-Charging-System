@@ -31,17 +31,6 @@ The system consists of an external battery to represent a portable emergency cha
 | Simscape Electrical |
 | Stateflow |
 
-## Running the Project
-**Step 1:** Open `main.m` in MATLAB.
-
-**Step 2:** Run `main.m` to open the main Simulink model.
-
-**Step 3:** Verify that all required toolboxes are installed.
-
-**Step 4:** Click **Run** in Simulink to begin the simulation.
-
-**Step 5:** View the simulation results using the Scope blocks.
-
 ## System-Level Architecture
 
 ## Project Features

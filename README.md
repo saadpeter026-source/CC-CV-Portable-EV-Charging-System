@@ -24,6 +24,12 @@ The system consists of an external battery to represent a portable emergency cha
 | `Portable_Charging_System.slx` | Main Simulink model of the portable EV charging system. |
 
 ## Required Software and Toolboxes
+| Software / Toolbox |
+|--------------------|
+| MATLAB |
+| Simulink |
+| Simscape Electrical |
+| Stateflow |
 
 ## Installation
 

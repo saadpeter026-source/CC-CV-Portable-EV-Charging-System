@@ -31,8 +31,6 @@ The system consists of an external battery to represent a portable emergency cha
 | Simscape Electrical |
 | Stateflow |
 
-## Installation
-
 ## Running the Project
 
 ## System-Level Architecture

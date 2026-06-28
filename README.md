@@ -37,6 +37,8 @@ The figure below illustrates the closed-loop control system architecture of the 
 ![Control System Block](images/Control%20System%20Block.png)
 
 ## Flowchart Architecture
+![Closed-Loop Charging System Flowchart](images/Closed-Loop%20Charging%20System%20Flowchart.png)
+
 ## Simulation Results
 
 ## Testing and Verification

@@ -61,6 +61,9 @@ For the best explanation, let's think about an example to see how this controlle
 
 ### External Portable Charger 
 ![](images//External_Portable_Battery_Power_Source.png)
+
+The External Portable Battery Charger provides a parameterized value of a 430 V DC source. To allow the charging process to work, this value must always be greater than the EV battery's initial terminal voltage (approximately 294.8 V at 5% SOC when no current is supplied). 
+
 ## Testing and Verification
 
 ## Future Work

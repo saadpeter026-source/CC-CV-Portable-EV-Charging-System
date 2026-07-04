@@ -53,7 +53,11 @@ Charge termination current logic is also another part of the CC-CV system and it
 ### CC-CV Controller
 ![CC-CV Controller](images//CC_CV_controller.png)
 
-The controller of any system is a very imporannt peiace to any control system design, as it allows the regualtion of the system design. In this case I have designed a simple CC-CV Controller which uses switch logic to switch betewwn Mode 0 (CC) and Mode 1 (CV). In the begginenig of the expcimeen  The current error is given by $e_I = I_{ref} - I_{out}$.
+The controller of any system is a very important piece of any control system design, as it allows the regulation of the system. In this case, I have designed a simple CC-CV Controller which uses switch logic to switch between Mode 0 (CC) and Mode 1 (CV). In the beginning of the experiment, the current error is given by $e_I = I_{ref} - I_{out}$, where $I_{ref}$ represents the charging current of 35 A and $I_{out}$ represents the EV battery charging output. The PI controller slowly drives this error to zero, allowing the system to regulate the current at 35 A.
+
+Once the experiment transitions (this happens due to the CC-CV Logic implementation) to Mode 1 (CV Mode), the current controller is no longer active, and the voltage controller now regulates the output voltage. The same idea as before, the voltage error is given by $e_V = V_{ref} - V_{out}$, where $V_{ref}$ represents the reference voltage of 295 V, and $V_{out}$ represents the EV battery output voltage.
+
+For the best explanation, let's think about an example to see how this controller might work. For instance, if the EV battery outputs 33.4 A (this could be due to oscillating factors or because it hasn't reached steady state), and we know the current reference is 35 A, it would produce a 1.6 A error in the system. The controller then increases the PWM duty cycle, allowing the buck converter to transfer more current to the system.
 
 ## Testing and Verification
 

@@ -53,6 +53,8 @@ Charge termination current logic is also another part of the CC-CV system and it
 ### CC-CV Controller
 ![CC-CV Controller](images//CC_CV_controller.png)
 
+The controller of any system is a very imporannt peiace to any control system design, as it allows the regualtion of the system design. In this case I have designed a simple CC-CV Controller which uses switch logic to switch betewwn Mode 0 (CC) and Mode 1 (CV). In the begginenig of the expcimeen  The current error is given by $e_I = I_{ref} - I_{out}$.
+
 ## Testing and Verification
 
 ## Future Work

@@ -66,7 +66,60 @@ The External Portable Battery Charger provides a parameterized value of a 430 V 
 
 ### EV Battery/Plant
 ![](images//EV_Battery_Plant.png)
-## Testing and Verification
+
+Now that we know a little about what the External Portable Charger does, let's analyze the Plant of this control system design. The EV battery we have parameterized is an approximated model of the **Cadillac Lyriq 2024** (all of the data information can be found in the **data/** portion of this project). Since we couldn't model a much more detailed battery pack, which is usually done using cells in series and parallel with specific dimensions, we have constructed a much simpler Simscape model for the purpose of simulation time and simplicity.
+
+The EV battery nominal voltage is **350 V** without any initial conditions. With the initial condition applied at **5% SOC**, the voltage decreases to approximately **294.8 V**. The battery capacity is modeled as **309 Ah**, providing approximately **108.15 kWh** (when fully charged).
+
+Since we have modeled this experiment at **5% SOC**, the EV battery stores approximately **5.41 kWh** of energy and therefore needs approximately **102.74 kWh** of additional energy to reach **100% SOC** (fully charged).
+
+Now here is the interesting part of this EV vehicle. Since we know the portable charger stores around **2.924 kWh** of energy, if we start our system with **5% SOC**, it would take approximately **17 minutes** for the portable charger capacity to become empty. This is constructed from the maximum charging power,
+
+$$
+P = VI = (294.8\ \mathrm{V})(35\ \mathrm{A}) \approx 10.3\ \mathrm{kW}
+$$
+
+Taking this value,
+
+$$
+t=\frac{E}{P}
+=\frac{2.924\ \mathrm{kWh}}{10.3\ \mathrm{kW}}
+\approx0.284\ \mathrm{hours}
+\approx17\ \mathrm{minutes}
+$$
+
+(this is assuming ideal efficiency of the system).
+
+Thus, the system would go from **5% SOC** to around **7.7% SOC**, knowing that
+
+$$
+\Delta SOC
+=
+\frac{2.924\ \mathrm{kWh}}{108.15\ \mathrm{kWh}}
+\times100
+\approx2.7\%
+$$
+
+Therefore,
+
+$$
+SOC_{\mathrm{final}}
+=
+5\%+2.7\%
+\approx7.7\%
+$$
+
+This is all very important as it allows us to compute how much mileage the external charger can provide to the EV battery until the capacity of the portable charger is empty. In this case, since the **Cadillac Lyriq** estimated energy consumption is around **300 Wh/mile**, we can calculate
+
+$$
+\text{Driving Range}
+=
+\frac{2924\ \mathrm{Wh}}
+{300\ \mathrm{Wh/mile}}
+\approx9.7\ \mathrm{miles}
+$$
+
+of additional driving range.## Testing and Verification
 
 ## Future Work
 

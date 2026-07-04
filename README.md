@@ -60,7 +60,7 @@ Once the experiment transitions (this happens due to the CC-CV Logic implementat
 For the best explanation, let's think about an example to see how this controller might work. For instance, if the EV battery outputs 33.4 A (this could be due to oscillating factors or because it hasn't reached steady state), and we know the current reference is 35 A, it would produce a 1.6 A error in the system. The controller then increases the PWM duty cycle, allowing the buck converter to transfer more current to the system.
 
 ### External Portable Charger 
-![]()
+![](images//External_Portable_Battery_Power_Source.png)
 ## Testing and Verification
 
 ## Future Work

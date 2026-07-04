@@ -65,7 +65,7 @@ For the best explanation, let's think about an example to see how this controlle
 The External Portable Battery Charger provides a parameterized value of a 430 V DC source. To allow the charging process to work, this value must always be greater than the EV battery's initial terminal voltage (approximately 294.8 V at 5% SOC before charging begins). Additionally, its battery capacity is modeled at 6.8 Ah, allowing it to store approximately 2.924 kWh of energy. This is an important parameter to know, especially in the design of more highly complex charging systems. We will get to a more detailed analysis in the EV Battery subsystem.
 
 ### EV Battery/Plant
-![](images//External_Portable_Battery_Power_Source.png)
+![](images//EV_Battery_Plant.png)
 ## Testing and Verification
 
 ## Future Work

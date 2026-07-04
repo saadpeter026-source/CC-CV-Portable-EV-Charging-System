@@ -40,7 +40,7 @@ The figure below illustrates the closed-loop control system architecture of the 
 ![Closed-Loop Charging System Flowchart](images/Closed-Loop%20Charging%20System%20Flowchart.png)
 
 ## Subsystem Descriptions
-![CC-CV Logic Subsystem](cc_cv_logic.png)
+![CC-CV Logic Subsystem](images/cc_cv_logic.png)
 
 ## Testing and Verification
 

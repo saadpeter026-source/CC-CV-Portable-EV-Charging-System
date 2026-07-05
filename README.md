@@ -74,6 +74,9 @@ Now here is the interesting part of this EV vehicle. Since we know the portable 
 ### DC-DC Buck Converter/Actuator
 ![](images//Buck_Converter.png)
 
+The general purpose of a buck converter is to step down the input voltage. Why do we need to step down the voltage? The main reason is to protect the load being powered. Let's look at it this way. If we removed the buck converter from our system and directly supplied the 430 V output of the portable charger to the EV battery, the battery would no longer receive a controlled charging voltage or current. This could place excessive electrical stress on the system and damage the battery. Components such as resistors, capacitors, inductors, and semiconductor devices could overheat or fail. In the worst-case scenario, the uncontrolled charging process could cause catastrophic damage to both the charging system and the EV battery.
+
+
 ### SOC Estimation by Coulomb Counting
 ![](images/SOC_Coulomb_Counting.png)
 

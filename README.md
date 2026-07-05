@@ -81,8 +81,10 @@ Now here is the interesting part of this EV vehicle. Since we know the portable 
 ![](images//System_Efficiency.png)
 
 ### EV Thermal Model
+![](images//EV_Battery_Plant.png)
 
 ### IGBT Thermal Model
+![](()
 
 ## Testing and Verification
 

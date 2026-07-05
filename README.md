@@ -78,6 +78,7 @@ Now here is the interesting part of this EV vehicle. Since we know the portable 
 ![](images/SOC_Coulomb_Counting.png)
 
 ### Charging Efficiency
+![](images//System_Efficiency.png)
 
 ### EV Thermal Model
 

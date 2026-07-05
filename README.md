@@ -101,10 +101,10 @@ In a much more complex system, semiconductors need to be cooled so that the syst
 ## Testing and Verification
 ### Test 1: EV Battery Validation
 
-#### Voltage Response
+#### CC-CV Charging Voltage Response
 ![](images/EV_Avg_Voltage_Graph.png)
 
-#### Current Response
+#### CC-CV Charging Current Response
 
 #### State of Charge (SOC)
 

@@ -8,8 +8,7 @@ The system consists of an external battery to represent a portable emergency cha
 ## Project Objectives
 * Demonstrate the operation of a portable EV charging system.
 * Verify that the EV battery charges successfully and the State of Charge (SOC) increases.
-* Validate the closed-loop CC-CV charging strategy.
-* Test the charging system using a commercial Panasonic lithium-ion cell.
+* Validate the closed-loop CC-CV charging strategy
 * Test the charging system using a larger EV battery based on the 2024 Cadillac Lyriq battery specifications.
 * Monitor the thermal behavior of the IGBT and EV battery during the charging process.
 

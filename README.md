@@ -75,6 +75,7 @@ Now here is the interesting part of this EV vehicle. Since we know the portable 
 ![](images//Buck_Converter.png)
 
 ### SOC Estimation by Coulomb Counting
+![](images/SOC_Coulomb_Counting.png)
 
 ### Charging Efficiency
 

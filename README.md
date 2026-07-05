@@ -92,6 +92,8 @@ In any system, we always want to know the efficiency, as it allows us to measure
 ### EV Thermal Model
 ![](images//EV_Thermal_Temp.png)
 
+This subsystem analyzes the thermal characteristics of the EV battery, parameterized with an ambient temperature of 298.15 K (25°C), representing standard room temperature. It allows heat to flow between the battery and the surrounding environment. Heat is primarily generated due to electrical losses during the charging process.
+
 ### IGBT Thermal Model
 ![](images/Buck_Converter_Thermal_Model.png)
 

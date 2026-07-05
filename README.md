@@ -84,7 +84,7 @@ Although this equation describes the general formulation of the Coulomb Counting
 ### Charging Efficiency
 ![](images//System_Efficiency.png)
 
-In any system, we always want to know the efficiency, as it allows us to measure how ideal or non-ideal a system really is. We modeled this using the well-known equation $$\eta_{\mathrm{charging}}=\frac{E_{\mathrm{battery}}}{E_{\mathrm{input}}}\times100\%$$. Additionally, we used a Low Pass Filter (LPF) to allow the efficiency output to use average values rather than oscillating PWM values.
+In any system, we always want to know the efficiency, as it allows us to measure how ideal or non-ideal a system really is. We modeled this using the well-known equation $$\eta_{\mathrm{charging}}=\frac{P_{\mathrm{EV\ battery,\ output}}}{P_{\mathrm{Portable\ Charger,\ input}}}\times100\%$$ Additionally, we used a Low Pass Filter (LPF) to allow the efficiency output to use average values rather than oscillating PWM values.
 
 ### EV Thermal Model
 ![](images//EV_Thermal_Temp.png)

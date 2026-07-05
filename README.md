@@ -97,6 +97,7 @@ This subsystem analyzes the thermal characteristics of the EV battery, parameter
 ### IGBT Thermal Model
 ![](images/Buck_Converter_Thermal_Model.png)
 
+
 ## Testing and Verification
 
 ## Future Work

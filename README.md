@@ -116,7 +116,9 @@ This leads into CV mode, where the voltage remains nearly constant. From 8.7180 
 #### State of Charge (SOC)
 ![](images//EV_SOC_Graph.png)
 
-#### Thermal Response
+#### IGBT Thermal Response
+
+### EV Battery Thermal Reponse
 
 ## Future Work
 

@@ -157,6 +157,9 @@ https://www.mathworks.com/help/sps/ug/buck-converter-thermal-model.html
 MathWorks Documentation – Battery State of Health Estimation
 https://www.mathworks.com/help/simscape-battery/ug/battery-state-of-health-estimation.html
 
+MathWorks Documentation – SOC Estimator (Coulomb Counting)
+https://www.mathworks.com/help/simscape-battery/ref/socestimatorcoulombcounting.html
+
 
 
 

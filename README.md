@@ -113,7 +113,7 @@ This leads into CV mode, where the voltage remains nearly constant. From 8.7180 
 #### CC-CV Charging Current Response
 ![](images/EV_Avg_Current_Graph.png)
 
-#### State of Charge (SOC)
+#### EV State of Charge (SOC)
 ![](images//EV_SOC_Graph.png)
 
 Although the voltage and current plots demonstrate successful implementation of the CC-CV charging strategy, the SOC % plot provides another way to validate that the charging process is working. As mentioned in the description (SOC subsystem), we started this experiment at 5% SOC to demonstrate the charging process when the EV vehicle has run out of charge. Looking at the plot, we can see a 0.0334% increase in approximately 10.8212 seconds of simulation. This is great, but how can we validate that the system is actually working? Well, let's do a bit of math.
@@ -121,6 +121,9 @@ Although the voltage and current plots demonstrate successful implementation of 
 If we know the EV battery capacity is 309 Ah, the charging current is 35 A, and in our case we have only evaluated 10.8212 seconds of charging time, we can calculate it like this. We know that a charging current of 35 A delivers 35 Ah of charge in exactly one hour. Since our simulation only represents 10.8212 seconds, we can convert this time into hours. Since 3600 seconds is exactly one hour, we can apply this to the following equation: $$Q = I \times t$$. Since we now know how to calculate time and we have the current as 35 A, we can calculate the charge: $$Q = 35 \times \frac{10.8212}{3600}$$, which gives us exactly 0.1052 Ah. We can then use that value (0.1052 Ah) to find the SOC %. Since the EV battery capacity is 309 Ah, dividing 0.1052 Ah by 309 Ah and multiplying it by 100 (SOC formula) gives us exactly 0.0334%, which is the same percentage shown in the plot above.
 
 One thing to keep in mind is that from 10.8212 to 11 seconds we can see the charging process came to a stop and remained constant for the rest of the experiment. This is due to the stop charging process of the current termination logic we have implemented. Another thing to account for is that we can barely see any change at approximately 8.6541, where the CC-CV transition occurs. Usually, in a CC-CV charging strategy, there is a slight bend because the charging current begins to decrease during CV mode, causing the battery to gain charge at a slower rate than during CC mode. We can verify this by looking at the plot. For example, from 0 to 8.6541 the change in SOC is approximately 0.0272%, and from 8.6541 to 10.8212 seconds there is only a change of around 0.00628%.
+
+#### Portable Charger State of Charge (SOC)
+![](images//Portable_SOC_Graph)
 
 #### IGBT Thermal Response
 ![](images/EV_IGBT_Thermal_Temp.png)

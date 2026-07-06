@@ -104,13 +104,13 @@ In a much more complex system, semiconductors need to be cooled so that the syst
 #### CC-CV Charging Voltage Response
 ![](images/EV_Avg_Voltage_Graph.png)
 
-To understand how the CC-CV charging process works, analyzing the voltage response plot is necessary. The ideal condition of voltage in CC-CV is that voltage initially increases in CC mode and stays constant in CV mode. If we look at the start of the charging process, it shows a smooth transient response with no startup oscillation. Voltage at the beginning of CC is rising due to the reference input of the voltage controller (this is set at 295V). You can see from the plot that from 0 to around 8.6541 seconds, it rises and accumulates a change in voltage of 0.4211V, obtained by the 293.8534V (approx. 0 sec) and 294.2745V (approx. 8.6541 sec) during the constant current region. 
+To understand how the CC-CV charging process works, analyzing the voltage response plot is necessary. Ideally, voltage increases during CC mode and remains constant during CV mode. At the start of the charging process, the voltage shows a smooth transient response with no startup oscillation. The voltage rises toward the 295V reference. From 0 to approximately 8.6541 seconds, the voltage increases by 0.4211V, from 293.8534V to 294.2745V, during the constant current region.
 
-Analyzing the plot from 8.6541 seconds to 8.7180 seconds, the CC to CV transition occurs. One detail that should be analyzed here is the voltage dip from 294.2745V (8.6541 sec) to 294.1825V (8.7180 sec). Voltage dips usually happen due to numerous reasons. In our case, current was changed because of the voltage controller taking over. 
+From 8.6541 seconds to 8.7180 seconds, the CC to CV transition occurs. During this transition, the voltage dips from 294.2745V to 294.1825V. In our case, this voltage dip occurs because the charging current changes as the voltage controller takes over.
 
-This leads us into the next section, CV mode where voltage stays constant. During the CV region (8.7180 s to 10.8210 s), the voltage remains nearly constant, decreasing by only 0.0066V from 294.1829V to 294.1763V. A 6.6mV change is extremely small, showing that constant voltage is effective at regulation in the charging phase. Another detail that should stand out is the sudden voltage dip at exactly 10.8210 seconds. In our model, we have implemented a current termination logic. Current termination is a very useful technique in any charging strategy, as it protects the battery from overcharge. 
+This leads into CV mode, where the voltage remains nearly constant. From 8.7180 s to 10.8210 s, the voltage decreases by only 0.0066V, from 294.1829V to 294.1763V. A 6.6mV change is extremely small, showing that constant voltage is effective at regulation during the charging phase. Another detail that should stand out is the sudden voltage dip at exactly 10.8210 seconds. In our model, current termination logic has been implemented. Current termination is a useful charging technique that protects the battery from overcharge.
 
-If you have got this far, throughout this whole plot you should notice something interesting. In an ideal CC–CV charging profile, the transition into CV mode is typically more gradual as the charging current continuously decreases while the voltage settles to the regulation value. In this simulation, the transition is relatively linear because the simulation duration is limited to approximately 11 seconds, which does not capture a longer portion of the CV charging process.
+One interesting observation is the CC to CV transition. In an ideal CC-CV charging profile, the transition into CV mode is typically more gradual as the charging current decreases while the voltage settles to its regulation value. In this simulation, the transition appears relatively linear because the model was only simulated for 11 seconds, which is not long enough to capture more of the CV charging process.
 
 #### CC-CV Charging Current Response
 
@@ -119,6 +119,8 @@ If you have got this far, throughout this whole plot you should notice something
 #### Thermal Response
 
 ## Future Work
+
+## Acknowledgment
 
 ## References
 MathWorks Documentation – Buck Converter Block

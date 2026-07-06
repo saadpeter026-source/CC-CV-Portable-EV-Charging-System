@@ -104,6 +104,16 @@ In a much more complex system, semiconductors need to be cooled so that the syst
 #### CC-CV Charging Voltage Response
 ![](images/EV_Avg_Voltage_Graph.png)
 
+To understand how CC-CV chagring prcoress works, anyalziing the Volatge reposne plot is neccary. The ideal condtion of voltage in CC-CV is that Volatge intailly increases in CC mode, and stays cosnant in CV mode. If we look the start of the charging prcoress, it shows a smooth trnaisnte reposne, with no startup oclaotion. Volatge in the Begging of CC is rising due to the refreance input of the Voltage controller (this is set at 295V). You can see form the plot that from 0 to around 8.6541 seconds it rises and accumanted a chnage in voltage of 0.4211V obtainted by the 293.8534V (approx 0 sec) and 294.2745V (Arppox 8.6541 sec) during the Consant cosnant region. Anayalzing the plot from 8.6541 seconds to 8.7180 seconds, the CC to CV trrnasiton occers. One detial that should be anyalized here is the undershoot from 294.2745V (8.6541 sec) to 294.1825V (8.7180 sec). We can calculate the percentage undershoot using the following equation:
+
+$$
+\text{Undershoot (\%)}=\frac{V_{\mathrm{ref}}-V_{\min}}{V_{\mathrm{ref}}}\times100
+$$
+
+where:
+- \(V_{\mathrm{ref}}\) is the reference (or pre-transition) voltage.
+- \(V_{\min}\) is the minimum voltage reached during the undershoot.
+
 #### CC-CV Charging Current Response
 
 #### State of Charge (SOC)

@@ -113,6 +113,7 @@ This leads into CV mode, where the voltage remains nearly constant. From 8.7180 
 One interesting observation is the CC to CV transition. In an ideal CC-CV charging profile, the transition into CV mode is typically more gradual as the charging current decreases while the voltage settles to its regulation value. In this simulation, the transition appears relatively linear because the model was only simulated for 11 seconds, which is not long enough to capture more of the CV charging process.
 
 #### CC-CV Charging Current Response
+![](images/EV_Avg_Current_Graph.png)
 
 #### State of Charge (SOC)
 

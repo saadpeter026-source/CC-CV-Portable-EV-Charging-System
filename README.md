@@ -125,7 +125,7 @@ One thing to keep in mind is that from 10.8212 to 11 seconds we can see the char
 #### IGBT Thermal Response
 ![](images/EV_IGBT_Thermal_Temp.png)
 
-The plot shows $$T_{\mathrm{junction}} > T_{\mathrm{case}} > T_{\mathrm{heatsink}}$$
+The plot shows $$T_{\mathrm{junction}} > T_{\mathrm{case}} > T_{\mathrm{heatsink}}$$. Junction reachs max point of 308.25K, Case reachs the max point of 298.225K, and heatsink reachs a max point of 298.176K. 
 
 ### EV Battery Thermal Reponse
 

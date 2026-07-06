@@ -108,7 +108,7 @@ To understand how the CC-CV charging process works, analyzing the voltage respon
 
 From 8.6541 seconds to 8.7180 seconds, the CC to CV transition occurs. During this transition, the voltage dips from 294.2745V to 294.1825V. In our case, this voltage dip occurs because the charging current changes as the voltage controller takes over.
 
-This leads into CV mode, where the voltage remains nearly constant. From 8.7180 s to 10.8210 s, the voltage decreases by only 0.0066V, from 294.1829V to 294.1763V. A 6.6mV change is extremely small, showing that constant voltage is effective at regulation during the charging phase. Another detail that should stand out is the sudden voltage dip at exactly 10.8210 seconds. In our model, current termination logic has been implemented. Current termination is a useful charging technique that protects the battery from overcharge.
+This leads into CV mode, where the voltage remains nearly constant. From 8.7180 s to 10.8210 s, the voltage decreases by only 0.0066V, from 294.1829V to 294.1763V. A 6.6mV change is extremely small, showing that constant voltage is effective at regulation during the charging phase. Another detail that should stand out is the sudden voltage dip at exactly 10.8210 seconds/
 
 One interesting observation is the CC to CV transition. In an ideal CC-CV charging profile, the transition into CV mode is typically more gradual as the charging current decreases while the voltage settles to its regulation value. In this simulation, the transition appears relatively linear because the model was only simulated for 11 seconds, which is not long enough to capture more of the CV charging process.
 

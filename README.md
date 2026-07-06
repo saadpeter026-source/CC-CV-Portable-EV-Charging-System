@@ -116,6 +116,7 @@ One interesting observation is the CC to CV transition. In an ideal CC-CV chargi
 ![](images/EV_Avg_Current_Graph.png)
 
 #### State of Charge (SOC)
+!![](images//EV_SOC_Graph.png)
 
 #### Thermal Response
 

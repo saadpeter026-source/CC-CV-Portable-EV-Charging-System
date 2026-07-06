@@ -125,6 +125,8 @@ One thing to keep in mind is that from 10.8212 to 11 seconds we can see the char
 #### Portable Charger State of Charge (SOC)
 ![](images/Portable_SOC_Graph.png)
 
+The portable charger SOC plot is similar to the EV SOC plot. The key difference is that one demonstrates the behavior of charging (EV battery), and the other shows discharging behavior (portable charger). We can see the plot starts at 100% SOC, assuming that we haven't used it and maybe we were on a road trip, or whatever caused us to end up in the situation of a 5% SOC EV battery. From 0 to 10.8212 seconds, we can see the value reaches 98.8562% which is a 1.1438% decrease from the starting time. As before, from 10.8212 to 11 seconds, the portable battery stops decreasing and remains constant.
+
 #### IGBT Thermal Response
 ![](images/EV_IGBT_Thermal_Temp.png)
 

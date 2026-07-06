@@ -137,7 +137,9 @@ The EV battery plot shows a maximum temperature of 298.170 K. From 0 to 10.8212 
 ## Future Work
 
 ## Acknowledgment
+I'd like to thank MathWorks and Senior Research Scientist Roberto G. Valenti (GitHub) for giving me the opportunity to work on this project. I learned a lot about EV systems, and it was a lot of fun to work on. This project definitely increased my interest in automotive engineering and helped me realize it's a field I'd like to pursue.
 
+I would encourage any engineering student, especially those looking for internships or hands-on experience, to take advantage of this program. It was a great opportunity to learn, build practical skills, and work on a real engineering project.
 ## References
 MathWorks Documentation – Buck Converter Block
 https://www.mathworks.com/help/sps/ref/buckconverter.html

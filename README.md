@@ -127,6 +127,7 @@ One thing to keep in mind is that from 10.8212 to 11 seconds we can see the char
 
 The portable charger SOC plot is similar to the EV SOC plot. The key difference is that one demonstrates the behavior of charging (EV battery), and the other shows discharging behavior (portable charger). We can see the plot starts at 100% SOC, assuming that we haven't used it and maybe we were on a road trip, or whatever caused us to end up in the situation of a 5% SOC EV battery. From 0 to 10.8212 seconds, we can see the value reaches 98.8562% which is a 1.1438% decrease from the starting time. As before, from 10.8212 to 11 seconds, the portable battery stops decreasing and remains constant. This plot is important as it allows us to monitor the remaining charge of the portable battery and estimate the remaining energy available for charging. In this case, we estimated approximately 17 minutes of charging time, as mentioned before.
 
+#### IGBT Thermal Model
 ![](images/EV_IGBT_Thermal_Temp.png)
 
 The plot shows $$T_{\mathrm{junction}} > T_{\mathrm{case}} > T_{\mathrm{heatsink}}$$. Junction reachs max point of 308.25K, Case reachs the max point of 298.225K, and heatsink reachs a max point of 298.176K. The highest temperatures occur during the constant-current (CC) charging mode, where the charging current is at its maximum. As the charger transitions into constant-voltage (CV) mode, the charging current decreases, resulting in lower temperatures. After the charging current is cut off, the temperatures continue to decrease as the device cools.

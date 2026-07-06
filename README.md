@@ -116,7 +116,7 @@ This leads into CV mode, where the voltage remains nearly constant. From 8.7180 
 #### State of Charge (SOC)
 ![](images//EV_SOC_Graph.png)
 
-Atlorguh the voltage and current plots demaonatre suffucl implamtion of CC-CV charging staertgy, SOC % plot is also another valdiaiton tool we can use to esiamte if the chagring procress is working. As mentioed in the desicption (SOC subsytem) we have satrtred this expcimentin at 5% SOC to dmeoantre the chagring procress wehn the EV vehcile has run out of charge. looking at the plot we can see a 0.033% increase in appx 10.5 sec of simualtion. 
+Atlorguh the voltage and current plots demaonatre suffucl implamtion of CC-CV charging staertgy, SOC % plot is also another valdiaiton tool we can use to esiamte if the chagring procress is working. As mentioed in the desicption (SOC subsytem) we have satrtred this expcimentin at 5% SOC to dmeoantre the chagring procress wehn the EV vehcile has run out of charge. looking at the plot we can see a 0.033% increase in appx 10.5 sec of simualtion. TThis is great, but how can we valaited that this sytem is acaulyl working? Well lets do a but of math. If we know the EV battery capcity is 309Ah, chagring current is 35A, and in our case we have onl eiualuted real chagring time for 10.5 sec, we can claute it like this. The charge delacited to the sysyem is clasuted by $$Q = 35 \times \frac{10.5}{3600}= 0.1021\ \mathrm{Ah}$$
 
 #### IGBT Thermal Response
 

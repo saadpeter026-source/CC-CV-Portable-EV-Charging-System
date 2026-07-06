@@ -116,7 +116,7 @@ This leads into CV mode, where the voltage remains nearly constant. From 8.7180 
 #### State of Charge (SOC)
 ![](images//EV_SOC_Graph.png)
 
-Although the voltage and current plots demonstrate successful implementation of the CC-CV charging strategy, the SOC % plot provides another way to validate that the charging process is working. As mentioned in the description (SOC subsystem), we started this experiment at **5% SOC** to demonstrate the charging process when the EV vehicle has run out of charge. Looking at the plot, we can see a 0.0334% increase in approximately 10.8212 seconds of simulation. This is great, but how can we validate that the system is actually working? Well, let's do a bit of math.
+Although the voltage and current plots demonstrate successful implementation of the CC-CV charging strategy, the SOC % plot provides another way to validate that the charging process is working. As mentioned in the description (SOC subsystem), we started this experiment at 5% SOC to demonstrate the charging process when the EV vehicle has run out of charge. Looking at the plot, we can see a 0.0334% increase in approximately 10.8212 seconds of simulation. This is great, but how can we validate that the system is actually working? Well, let's do a bit of math.
 
 If we know the EV battery capacity is 309 Ah, the charging current is 35 A, and in our case we have only evaluated 10.8212 seconds of charging time, we can calculate it like this. We know that a charging current of 35 A delivers 35 Ah of charge in exactly one hour. Since our simulation only represents 10.8212 seconds, we can convert this time into hours. Since 3600 seconds is exactly one hour, we can apply this to the following equation: $$Q = I \times t$$. Since we now know how to calculate time and we have the current as 35 A, we can calculate the charge: $$Q = 35 \times \frac{10.8212}{3600}$$, which gives us exactly 0.1052 Ah. We can then use that value (0.1052 Ah) to find the SOC %. Since the EV battery capacity is 309 Ah, dividing 0.1052 Ah by 309 Ah and multiplying it by 100 (SOC formula) gives us exactly 0.0334%, which is the same percentage shown in the plot above.
 
@@ -127,8 +127,10 @@ One thing to keep in mind is that from 10.8212 to 11 seconds we can see the char
 
 The plot shows $$T_{\mathrm{junction}} > T_{\mathrm{case}} > T_{\mathrm{heatsink}}$$. Junction reachs max point of 308.25K, Case reachs the max point of 298.225K, and heatsink reachs a max point of 298.176K. The highest temperatures occur during the constant-current (CC) charging mode, where the charging current is at its maximum. As the charger transitions into constant-voltage (CV) mode, the charging current decreases, resulting in lower temperatures. After the charging current is cut off, the temperatures continue to decrease as the device cools.
 
-### EV Battery Thermal Reponse
+#### EV Battery Thermal Reponse
+![](images//EV_Battery_Temp.png)
 
+The EV battery plot shows a maximum temperature of 298.170 K. From 0 to 10.8212 seconds, there is a 0.0201 K change in temperature. The EV battery temperature slightly rises as the battery is charging because the battery heats up and releases electrical losses. Similar to the IGBT model, from 10.8212 to 11 seconds, the temperature remains constant when no charging process occurs.
 ## Future Work
 
 ## Acknowledgment

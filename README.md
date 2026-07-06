@@ -114,7 +114,7 @@ This leads into CV mode, where the voltage remains nearly constant. From 8.7180 
 ![](images/EV_Avg_Current_Graph.png)
 
 #### State of Charge (SOC)
-!![](images//EV_SOC_Graph.png)
+![](images//EV_SOC_Graph.png)
 
 #### Thermal Response
 

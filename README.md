@@ -116,6 +116,8 @@ This leads into CV mode, where the voltage remains nearly constant. From 8.7180 
 #### State of Charge (SOC)
 ![](images//EV_SOC_Graph.png)
 
+Atlorguh the voltage and current plots demaonatre suffucl implamtion of CC-CV charging staertgy, SOC % plot is also another valdiaiton tool we can use to esiamte if the chagring procress is working. As mentioed in the desicption (SOC subsytem) we have satrtred this expcimentin at 5% SOC to dmeoantre the chagring procress wehn the EV vehcile has run out of charge. looking at the plot we can see a 0.033% increase in appx 10.5 sec of simualtion. 
+
 #### IGBT Thermal Response
 
 ### EV Battery Thermal Reponse

@@ -123,6 +123,9 @@ If we know the EV battery capacity is 309 Ah, the charging current is 35 A, and 
 One thing to keep in mind is that from 10.8212 to 11 seconds we can see the charging process came to a stop and remained constant for the rest of the experiment. This is due to the stop charging process of the current termination logic we have implemented. Another thing to account for is that we can barely see any change at approximately 8.6541, where the CC-CV transition occurs. Usually, in a CC-CV charging strategy, there is a slight bend because the charging current begins to decrease during CV mode, causing the battery to gain charge at a slower rate than during CC mode. We can verify this by looking at the plot. For example, from 0 to 8.6541 the change in SOC is approximately 0.0272%, and from 8.6541 to 10.8212 seconds there is only a change of around 0.00628%.
 
 #### IGBT Thermal Response
+![](images/EV_IGBT_Thermal_Temp.png)
+
+$$T_{\mathrm{junction}} > T_{\mathrm{case}} > T_{\mathrm{heatsink}}$$
 
 ### EV Battery Thermal Reponse
 

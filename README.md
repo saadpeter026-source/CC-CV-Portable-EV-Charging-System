@@ -125,7 +125,7 @@ One thing to keep in mind is that from 10.8212 to 11 seconds we can see the char
 #### IGBT Thermal Response
 ![](images/EV_IGBT_Thermal_Temp.png)
 
-$$T_{\mathrm{junction}} > T_{\mathrm{case}} > T_{\mathrm{heatsink}}$$
+The plot shows $$T_{\mathrm{junction}} > T_{\mathrm{case}} > T_{\mathrm{heatsink}}$$
 
 ### EV Battery Thermal Reponse
 

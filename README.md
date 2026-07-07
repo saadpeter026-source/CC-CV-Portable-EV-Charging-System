@@ -157,8 +157,8 @@ Although this project focuses on the control system implementation, I plan to co
 
 * Integrate the Battery Builder model into the complete charging system and replace the simplified EV battery model.
 
-* Simulate a much more detailed EV system with a discharge load (I'm thinking of extending this by adding an electric motor load to represent the four motors of the EV vehicle. This will allow me to analyze both the charging and discharging strategies.)
-
+* Simulate a much more detailed EV system with a discharge load (I'm thinking of extending this by adding an electric motor load. This will allow me to analyze both the charging and discharging strategies.)
+  
 * Explore additional features such as Vehicle-to-Load (V2L), Vehicle-to-Grid (V2G), and Vehicle-to-Home (V2H).
 
 * Explore more advanced Simulink features such as linearization, Bode plots, and frequency response analysis to further analyze the charging and discharging system.

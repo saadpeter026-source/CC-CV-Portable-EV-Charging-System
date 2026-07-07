@@ -153,7 +153,7 @@ There are a couple of hardware trade-offs that should be discussed before ending
 
 The most important hardware trade-off is the parameterization of the portable charging station. In this project, the portable charger is approximated at around 30 kg (this was estimated by taking the battery's 2.924 kWh energy capacity and assuming a typical lithium-ion battery pack energy density of approximately 100 Wh/kg, resulting in an estimated mass of around 29.2 kg). A battery of this size is generally portable enough for a person to carry, but this comes with a trade-off: reduced battery capacity. Since the battery stores less energy, it can only provide a limited amount of charge to the EV battery. However, a smaller battery offers several advantages, including improved portability, lower cost, and better compatibility with a wider range of EV vehicles.
 
-On the other hand, a much larger portable charger, for example around 60 kg, would store significantly more energy and provide a greater driving range. However, this also increases the weight, size, and overall cost of the system, making it less practical as an emergency portable charging solution.
+On the other hand, a much larger portable charger, for example around 60 kg, would store significantly more energy (around 6.000kWh if 100 Wh/kg is asssumed) and provide a greater driving range. However, this also increases the weight, size, and overall cost of the system, making it less practical as an emergency portable charging solution.
 
 ## Future Work
 ### CC-CV Portable EV Charging System (Version 2)

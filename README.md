@@ -170,9 +170,9 @@ Although this project focuses on the control system implementation, I plan to co
 2. Another challenge was demonstrating the complete CC-CV charging process. In practice, CC-CV charging occurs over a much longer period than the 11-second simulation used in this project. Although the controller successfully transitions from CC mode to CV mode, the short simulation time limits how much of the charging profile can be observed, resulting in more linear reponses rather than the gradual increase and decrease expected during a complete charging cycle. This was partially resolved by zooming into smaller sections of the graphs, making the CC-CV transition and controller response easier to visualize.
 
 ## Acknowledgment
-I'd like to thank MathWorks and Senior Research Scientist Roberto G. Valenti (GitHub) for giving me the opportunity to work on this project. I learned a lot about EV systems, and it was a lot of fun to work on. This project definitely increased my interest in automotive engineering and helped me realize it's a field I'd like to pursue.
+I'd like to thank MathWorks and Senior Research Scientist [Roberto G. Valenti](https://github.com/robertogl) for giving me the opportunity to work on this project. I learned a lot about EV systems, and it was a lot of fun to work on. This project definitely increased my interest in automotive engineering and helped me realize that it is a field I would like to pursue.
 
-I would encourage any engineering student, especially those looking for internships, to take advantage of this program. 
+I encourage any engineering student, especially those looking for internships, to take advantage of this program.
 
 ## References
 MathWorks Documentation – Buck Converter Block

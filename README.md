@@ -140,7 +140,10 @@ The plot shows $$T_{\mathrm{junction}} > T_{\mathrm{case}} > T_{\mathrm{heatsink
 ![](images//EV_Battery_Temp.png)
 
 The EV battery plot shows a maximum temperature of 298.170 K. From 0 to 10.8212 seconds, there is a 0.0201 K change in temperature. The EV battery temperature slightly rises as the battery is charging because the battery heats up and releases electrical losses. Similar to the IGBT model, from 10.8212 to 11 seconds, the temperature remains constant when no charging process occurs.
+
 ## Future Work
+### CC-CV Portable Charging Version 2
+![](images//Cadillac_Lyriq_EV_Pack_Version_2)
 
 ## Challnages 
 

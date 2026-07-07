@@ -165,7 +165,7 @@ Although this project focuses on the control system implementation, I plan to co
 
 ## Challenges 
 
-1. One challenge is that we cannot simulate the charging process for a much longer period of time. Although the real system would take approximately 17–18 minutes to charge the EV battery, the simulation only runs for about 11 seconds because the model is computationally complex. As the system becomes more complex, simulation time increases. One way I attempted to mitigate this challenge was by experimenting with different solver types, and using Accelerator mode
+1. One challenge is that I cannot simulate the charging process for a much longer period of time. Although the real system would take approximately 17–18 minutes to charge the EV battery, the simulation only runs for about 11 seconds because the model is computationally complex. As the system becomes more complex, simulation time increases. One way I attempted to mitigate this challenge was by experimenting with different solver types, and using Accelerator mode
 
 2. Another challenge was demonstrating the complete CC-CV charging process. In practice, CC-CV charging occurs over a much longer period than the 11-second simulation used in this project. Although the controller successfully transitions from CC mode to CV mode, the short simulation time limits how much of the charging profile can be observed, resulting in more linear reponses rather than the gradual increase and decrease expected during a complete charging cycle. This was partially resolved by zooming into smaller sections of the graphs, making the CC-CV transition and controller response easier to visualize.
 

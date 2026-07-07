@@ -147,6 +147,14 @@ The plot shows $$T_{\mathrm{junction}} > T_{\mathrm{case}} > T_{\mathrm{heatsink
 
 The EV battery plot shows a maximum temperature of 298.170 K. From 0 to 10.8212 seconds, there is a 0.0201 K change in temperature. The EV battery temperature slightly rises as the battery is charging because the battery heats up and releases electrical losses. Similar to the IGBT model, from 10.8212 to 11 seconds, the temperature remains constant when no charging process occurs.
 
+## Hardware Trade-offs
+
+There are a couple of hardware trade-offs that should be discussed before ending this project.
+
+The most important hardware trade-off is the parameterization of the portable charging station. In this project, the portable charger is approximated at around 30 kg. A battery of this size is generally portable enough for a person to carry, but this comes with a trade-off: reduced battery capacity. Since the battery stores less energy, it can only provide a limited amount of charge to the EV battery. However, a smaller battery offers several advantages, including improved portability, lower cost, and better compatibility with a wider range of EV vehicles.
+
+On the other hand, a much larger portable charger, for example around 60 kg, would store significantly more energy and provide a greater driving range. However, this also increases the weight, size, and overall cost of the system, making it less practical as an emergency portable charging solution.
+
 ## Future Work
 ### CC-CV Portable EV Charging System (Version 2)
 ![](images/Cadillac_Lyriq_EV_Pack_Version_2.png)

@@ -113,6 +113,10 @@ This leads into CV mode, where the voltage remains nearly constant. From 8.7180 
 #### CC-CV Charging Current Response
 ![](images/EV_Avg_Current_Graph.png)
 
+Looking at this plot, we can see that the transient period occurs between 0 and 0.1348 seconds. The transient period is the time it takes for the system to stabilize before reaching the steady-state period. Since the reference current input is 35 A, the controller operating in CC mode attempts to reduce the error to achieve a value closer to 35 A. During the transient period, the current reaches approximately 34.9879 A at 0.1348 seconds. After 0.1348 seconds, CC mode begins and the current remains nearly constant until the transition period occurs at exactly 8.6541 seconds with a value of 34.9807 A. During the steady-state period, from 0.1348 to 8.6541 seconds, there is only an approximate -0.0072 A change (the negative sign indicating a slight decrease in current), which is a very small variation and confirms that the controller is regulating the charging current correctly.
+
+From 8.641 seconds to approximately 8.7180 seconds, the CC-CV transition period occurs. We can see a slight current dip, similar to the voltage response plot. From 8.7180 seconds to 10.8210 seconds, the current decreases from 32.4892 A to 30.9004 A, showing a current reduction of approximately 1.5888 A from the initial value at 8.7180 seconds. This behavior provides a good representation of CV mode, where the charging current is expected to gradually decrease over time while the output voltage is regulated.
+
 #### EV State of Charge (SOC)
 ![](images//EV_SOC_Graph.png)
 
@@ -137,6 +141,12 @@ The plot shows $$T_{\mathrm{junction}} > T_{\mathrm{case}} > T_{\mathrm{heatsink
 
 The EV battery plot shows a maximum temperature of 298.170 K. From 0 to 10.8212 seconds, there is a 0.0201 K change in temperature. The EV battery temperature slightly rises as the battery is charging because the battery heats up and releases electrical losses. Similar to the IGBT model, from 10.8212 to 11 seconds, the temperature remains constant when no charging process occurs.
 ## Future Work
+
+## Challnages 
+
+1. One challenge is that we cannot simulate the charging process for a much longer period of time. Although the real system would take approximately 17–18 minutes to charge the EV battery, the simulation only runs for about 11 seconds because the model is computationally complex. As the system becomes more complex, simulation time increases. One way I attempted to mitigate this challenge was by experimenting with different solver types, and using acclertore mode. 
+
+2. Another challenge was demonstrating the complete CC-CV charging process. In practice, CC-CV charging occurs over a much longer period than the 11-second simulation used in this project. Although the controller successfully transitions from CC mode to CV mode, the short simulation time limits how much of the charging profile can be observed, resulting in more linear reponses rather than the gradual increase and decrease expected during a complete charging cycle. This was partially resolved by zooming into smaller sections of the graphs, making the CC-CV transition and controller response easier to visualize.
 
 ## Acknowledgment
 I'd like to thank MathWorks and Senior Research Scientist Roberto G. Valenti (GitHub) for giving me the opportunity to work on this project. I learned a lot about EV systems, and it was a lot of fun to work on. This project definitely increased my interest in automotive engineering and helped me realize it's a field I'd like to pursue.

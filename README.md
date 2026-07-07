@@ -1,4 +1,4 @@
-# Portable EV Charging System
+# CC-CV Portable EV Charging System
 
 ## Abstract
 Imagine owning an electric vehicle (EV) that runs out of charge just before reaching your destination. In this situation, you may need to tow the vehicle to the nearest charging station or pay for a mobile EV charging service, both of which can be expensive and time-consuming. An emergency portable charging station stored inside the vehicle could provide enough temporary charge to safely reach the nearest charging station.
@@ -106,7 +106,7 @@ In a much more complex system, semiconductors need to be cooled so that the syst
 
 To understand how the CC-CV charging process works, analyzing the voltage response plot is necessary. Ideally, voltage increases during CC mode and remains constant during CV mode. At the start of the charging process, the voltage shows a smooth transient response with no startup oscillation. The voltage rises toward the 295V reference. From 0 to approximately 8.6541 seconds, the voltage increases by 0.4211V, from 293.8534V to 294.2745V, during the constant current region.
 
-From 8.6541 seconds to 8.7180 seconds, the CC to CV transition occurs. During this transition, the voltage dips from 294.2745V to 294.1825V. In our case, this voltage dip occurs because the charging current changes as the voltage controller takes over.
+From 8.6541 seconds to 8.7180 seconds, the CC to CV transition occurs. During this transition, the voltage dips from 294.2745V to 294.1825V. In our case, the voltage dip occurs because the controller is transitioning between two control loops.
 
 This leads into CV mode, where the voltage remains nearly constant. From 8.7180 s to 10.8210 s, the voltage decreases by only 0.0066V, from 294.1829V to 294.1763V. A 6.6mV change is extremely small, showing that constant voltage is effective at regulation during the charging phase. Another detail that should stand out is the sudden voltage dip at exactly 10.8210 seconds/
 
@@ -115,7 +115,7 @@ This leads into CV mode, where the voltage remains nearly constant. From 8.7180 
 
 Looking at this plot, we can see that the transient period occurs between 0 and 0.1348 seconds. The transient period is the time it takes for the system to stabilize before reaching the steady-state period. Since the reference current input is 35 A, the controller operating in CC mode attempts to reduce the error to achieve a value closer to 35 A. During the transient period, the current reaches approximately 34.9879 A at 0.1348 seconds. After 0.1348 seconds, CC mode begins and the current remains nearly constant until the transition period occurs at exactly 8.6541 seconds with a value of 34.9807 A. During the steady-state period, from 0.1348 to 8.6541 seconds, there is only an approximate -0.0072 A change (the negative sign indicating a slight decrease in current), which is a very small variation and confirms that the controller is regulating the charging current correctly.
 
-From 8.641 seconds to approximately 8.7180 seconds, the CC-CV transition period occurs. We can see a slight current dip, similar to the voltage response plot. From 8.7180 seconds to 10.8210 seconds, the current decreases from 32.4892 A to 30.9004 A, showing a current reduction of approximately 1.5888 A from the initial value at 8.7180 seconds. This behavior provides a good representation of CV mode, where the charging current is expected to gradually decrease over time while the output voltage is regulated.
+From 8.6541 seconds to approximately 8.7180 seconds, the CC-CV transition period occurs. We can see a slight current dip, similar to the voltage response plot. From 8.7180 seconds to 10.8210 seconds, the current decreases from 32.4892 A to 30.9004 A, showing a current reduction of approximately 1.5888 A from the initial value at 8.7180 seconds. This behavior provides a good representation of CV mode, where the charging current is expected to gradually decrease over time while the output voltage is regulated.
 
 #### EV State of Charge (SOC)
 ![](images//EV_SOC_Graph.png)
@@ -142,10 +142,10 @@ The plot shows $$T_{\mathrm{junction}} > T_{\mathrm{case}} > T_{\mathrm{heatsink
 The EV battery plot shows a maximum temperature of 298.170 K. From 0 to 10.8212 seconds, there is a 0.0201 K change in temperature. The EV battery temperature slightly rises as the battery is charging because the battery heats up and releases electrical losses. Similar to the IGBT model, from 10.8212 to 11 seconds, the temperature remains constant when no charging process occurs.
 
 ## Future Work
-### CC-CV Portable Charging Version 2
+### CC-CV Portable EV Charging System (Version 2)
 ![](images/Cadillac_Lyriq_EV_Pack_Version_2.png)
 
-Although this project does not present a highly detailed EV charging system, I plan to continue developing it into Version 2. Below are some of the features and improvements I plan to implement:
+Although this project focuses on the control system implementation, I plan to continue developing it into Version 2. Below are some of the features and improvements I plan to implement:
 
 * Battery Management System (BMS) - Implement State of Health (SOH), improved State of Charge (SOC) estimation, discharge logic, cell balancing, and overtemperature protection.
 
@@ -155,9 +155,11 @@ Although this project does not present a highly detailed EV charging system, I p
 
 * Explore additional features such as Vehicle-to-Load (V2L), Vehicle-to-Grid (V2G), and Vehicle-to-Home (V2H).
 
-## Challnages 
+* Explore more advanced Simulink features such as linearization, Bode plots, and frequency response analysis to further analyze the charging and discharging system.
 
-1. One challenge is that we cannot simulate the charging process for a much longer period of time. Although the real system would take approximately 17–18 minutes to charge the EV battery, the simulation only runs for about 11 seconds because the model is computationally complex. As the system becomes more complex, simulation time increases. One way I attempted to mitigate this challenge was by experimenting with different solver types, and using acclertore mode. 
+## Challenges 
+
+1. One challenge is that we cannot simulate the charging process for a much longer period of time. Although the real system would take approximately 17–18 minutes to charge the EV battery, the simulation only runs for about 11 seconds because the model is computationally complex. As the system becomes more complex, simulation time increases. One way I attempted to mitigate this challenge was by experimenting with different solver types, and using Accelerator mode
 
 2. Another challenge was demonstrating the complete CC-CV charging process. In practice, CC-CV charging occurs over a much longer period than the 11-second simulation used in this project. Although the controller successfully transitions from CC mode to CV mode, the short simulation time limits how much of the charging profile can be observed, resulting in more linear reponses rather than the gradual increase and decrease expected during a complete charging cycle. This was partially resolved by zooming into smaller sections of the graphs, making the CC-CV transition and controller response easier to visualize.
 
@@ -173,9 +175,6 @@ https://www.mathworks.com/help/sps/ref/buckconverter.html
 EV Database – 2024 Cadillac Lyriq 600 E4 Specifications
 https://ev-database.org/car/2243/Cadillac-Lyriq-600-E4
 
-Panasonic Battery Group – NCR18500 Lithium-Ion Battery Datasheet
-https://www.alldatasheet.com/datasheet-pdf/pdf/597037/PANASONICBATTERY/NCR18500.html
-
 MathWorks Documentation – Buck Converter Thermal Model
 https://www.mathworks.com/help/sps/ug/buck-converter-thermal-model.html
 
@@ -184,6 +183,15 @@ https://www.mathworks.com/help/simscape-battery/ug/battery-state-of-health-estim
 
 MathWorks Documentation – SOC Estimator (Coulomb Counting)
 https://www.mathworks.com/help/simscape-battery/ref/socestimatorcoulombcounting.html
+
+GeeksforGeeks - Efficiency Formula
+https://www.geeksforgeeks.org/physics/efficiency-formula/
+
+MathWorks Documentation - Battery Builder 
+https://www.mathworks.com/help/simscape-battery/ug/get-started-battery-builder.html
+
+MathWorks Documentation - Buck Converter Voltage Control
+https://www.mathworks.com/help/sps/ug/buck-converter-voltage-control.html
 
 
 

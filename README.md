@@ -143,7 +143,7 @@ The EV battery plot shows a maximum temperature of 298.170 K. From 0 to 10.8212 
 
 ## Future Work
 ### CC-CV Portable Charging Version 2
-![](images//Cadillac_Lyriq_EV_Pack_Version_2)
+![](images/Cadillac_Lyriq_EV_Pack_Version_2.png)
 
 ## Challnages 
 

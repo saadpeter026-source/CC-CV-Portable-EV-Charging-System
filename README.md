@@ -39,7 +39,7 @@ The system consists of an external battery to represent a portable emergency cha
 ## System-Level Architecture (Block Level)
 The figure below illustrates the closed-loop control system architecture of the portable EV charging system.
 
-![Control System Block](images/Control%20System%20Block.png)
+![Control System Block](images/Control_System_Theroy_Block_Diagram.png)
 
 ## Flowchart Architecture
 ![Closed-Loop Charging System Flowchart](images/Closed-Loop%20Charging%20System%20Flowchart.png)

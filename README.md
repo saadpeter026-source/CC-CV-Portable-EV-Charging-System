@@ -199,6 +199,8 @@ https://www.mathworks.com/help/simscape-battery/ug/get-started-battery-builder.h
 MathWorks Documentation - Buck Converter Voltage Control
 https://www.mathworks.com/help/sps/ug/buck-converter-voltage-control.html
 
+Semantic Scholar - Reduction of Switching Transients in Constant Current (CC)/Constant Voltage (CV) Mode of Electric Vehicles Battery Charging
+https://www.semanticscholar.org/paper/Reduction-of-Switching-Transients-in-Constant-(CC)-Arora/f7c43987c457a689969cf5fc1fba08b90a2f4eaa
 
 
 

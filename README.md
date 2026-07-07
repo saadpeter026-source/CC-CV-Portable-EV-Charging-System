@@ -30,6 +30,12 @@ The system consists of an external battery to represent a portable emergency cha
 | Simscape Electrical |
 | Stateflow |
 
+## How to Run the Project
+
+1. Download the Simulink model (`Portable_Charging_System_Test_2.slx`).
+2. Download the initialization script (`main.m`).
+3. Run `main.m`. The script automatically loads all required parameters and opens the Simulink model, allowing you to run the simulation.
+
 ## System-Level Architecture (Block Level)
 The figure below illustrates the closed-loop control system architecture of the portable EV charging system.
 

@@ -145,6 +145,16 @@ The EV battery plot shows a maximum temperature of 298.170 K. From 0 to 10.8212 
 ### CC-CV Portable Charging Version 2
 ![](images/Cadillac_Lyriq_EV_Pack_Version_2.png)
 
+Although this project does not present a highly detailed EV charging system, I plan to continue developing it into Version 2. Below are some of the features and improvements I plan to implement:
+
+* Battery Management System (BMS) - Implement State of Health (SOH), improved State of Charge (SOC) estimation, discharge logic, cell balancing, and overtemperature protection.
+
+* Integrate the Battery Builder model into the complete charging system and replace the simplified EV battery model.
+
+* Simulate a much more detailed EV system with a discharge load (I'm thinking of extending this by adding an electric motor load to represent the four motors of the EV vehicle. This will allow me to analyze both the charging and discharging strategies.)
+
+* Explore additional features such as Vehicle-to-Load (V2L), Vehicle-to-Grid (V2G), and Vehicle-to-Home (V2H).
+
 ## Challnages 
 
 1. One challenge is that we cannot simulate the charging process for a much longer period of time. Although the real system would take approximately 17–18 minutes to charge the EV battery, the simulation only runs for about 11 seconds because the model is computationally complex. As the system becomes more complex, simulation time increases. One way I attempted to mitigate this challenge was by experimenting with different solver types, and using acclertore mode. 

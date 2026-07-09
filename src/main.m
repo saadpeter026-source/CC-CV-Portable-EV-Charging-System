@@ -5,9 +5,9 @@ clear;
 clc;
 close all;
 
-% Change to the tests folder
+% Add the tests folder to the MATLAB path
 repoRoot = fileparts(fileparts(mfilename('fullpath')));
-cd(fullfile(repoRoot, 'tests'));
+addpath(fullfile(repoRoot, 'tests'));
 
 % Open the Simulink model
 open_system('Portable_Charging_System_Test_2');

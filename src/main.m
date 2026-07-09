@@ -9,11 +9,14 @@ close all;
 repoRoot = fileparts(fileparts(mfilename('fullpath')));
 addpath(fullfile(repoRoot,'tests'));
 
+% Model name
+modelName = 'Portable_Charging_System_Test_2_1';
+
 % Open the Simulink model
-open_system('Portable_Charging_System_Test_2');
+open_system(modelName);
 
 % Run simulation
-simOut = sim('Portable_Charging_System_Test_2');
+simOut = sim(modelName);
 
 % Get logged signals
 logs = simOut.logsout;

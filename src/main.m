@@ -5,6 +5,10 @@ clear;
 clc;
 close all;
 
+% Change to the tests folder
+repoRoot = fileparts(fileparts(mfilename('fullpath')));
+cd(fullfile(repoRoot, 'tests'));
+
 % Open the Simulink model
 open_system('Portable_Charging_System_Test_2');
 

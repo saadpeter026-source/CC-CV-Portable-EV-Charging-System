@@ -10,7 +10,7 @@ repoRoot = fileparts(fileparts(mfilename('fullpath')));
 addpath(fullfile(repoRoot,'tests'));
 
 % Model name
-modelName = 'Portable_Charging_System_Test_2_1';
+modelName = 'Portable_Charging_System_Test_2_1_';
 
 % Open the Simulink model
 open_system(modelName);

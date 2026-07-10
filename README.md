@@ -22,7 +22,6 @@ The system consists of an external battery to represent a portable emergency cha
 | `images/` | System diagrams, subsystem figures, and simulation screenshots. |
 | `tests/` | Simulation test cases and validation results. |
 | `data/` | Battery parameter spreadsheets and supporting datasets. |
-| `docs/` | Project presentation and additional documentation. |
 | `main.m` | Main MATLAB script used to run the project. |
 | `Portable_Charging_System_Test_2.slx` | Main Simulink model of the portable EV charging system. |
 

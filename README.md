@@ -1,8 +1,8 @@
 # CC-CV Portable EV Charging System
 
-Project ID: 216
-Author: Peter Saad
-University: Christopher Newport University
+#### Project ID: 216
+#### Author: Peter Saad
+#### University: Christopher Newport University
 
 ## Abstract
 Imagine owning an electric vehicle (EV) that runs out of charge just before reaching your destination. In this situation, you may need to tow the vehicle to the nearest charging station or pay for a mobile EV charging service, both of which can be expensive and time-consuming. An emergency portable charging station stored inside the vehicle could provide enough temporary charge to safely reach the nearest charging station.

@@ -1,44 +1,43 @@
-%% Portable EV Charging System
-% Main script for running the Portable EV Charging System Test 2 model
+%% ========================================================================
+%% Clear Workspace
+%% Clear previous variables, command window, and figures
+%% ========================================================================
 
 clear;
 clc;
 close all;
 
-% Add the tests folder to the MATLAB path
+%% ========================================================================
+%% Setup - Find the file in the github workspace
+%% ========================================================================
+
 repoRoot = fileparts(fileparts(mfilename('fullpath')));
 addpath(fullfile(repoRoot,'tests'));
 
-% Model name
 modelName = 'Portable_Charging_System_Test_2_1_';
 
-% Open the Simulink model
-open_system(modelName);
+%% ========================================================================
+%% Run Simulation - Open the Simulink model and run the simulation.
+%% ========================================================================
 
-% Run simulation
+open_system(modelName);
 simOut = sim(modelName);
 
-% Get logged signals
 logs = simOut.logsout;
 
 disp('Simulation completed successfully.');
 
-% Efficiency
-eff = logs.get('Efficiency');
-
-% Portable Battery SOC
+%% ========================================================================
+%% Retrieve Logged Signals - Simulink logs the simulation data to logsout.
+%% MATLAB retrieves the logged voltage, current, SOC, thermal, and efficiency signals.
+%% ========================================================================
+% Portable Battery
 portableSOC = logs.get('Portable Battery State of Charge (SOC)');
 
-% EV Voltage
+% EV Battery
 evVoltage = logs.get('EV Battery Charging Voltage');
-
-% EV Current
 evCurrent = logs.get('EV Battery Charging Current');
-
-% EV SOC
 evSOC = logs.get('EV Battery State of Charge (SOC)');
-
-% Battery Temperature
 batteryTemp = logs.get('EV Battery Temperature During Charging');
 
 % IGBT Temperatures
@@ -46,10 +45,18 @@ junctionTemp = logs.get('IGBT Junction Temperature During Charging');
 caseTemp = logs.get('IGBT Case Temperature During Charging');
 heatsinkTemp = logs.get('IGBT Heatsink Temperature During Charging');
 
+% Efficiency
+eff = logs.get('Efficiency');
 
-%% Plot Results
+%% ========================================================================
+%% Plot Results - MATLAB uses the logged signals from Simulink to create
+%% individual plots with titles, axis labels, and grids.
+%% ========================================================================
 
-% EV Battery Charging Voltage
+%% ------------------------------------------------------------------------
+%% EV Battery Charging Voltage
+%% ------------------------------------------------------------------------
+
 figure;
 plot(evVoltage.Values.Time, evVoltage.Values.Data, 'LineWidth', 2);
 title('EV Battery Charging Voltage');
@@ -57,7 +64,10 @@ xlabel('Time (s)');
 ylabel('Voltage (V)');
 grid on;
 
-% EV Battery Charging Current
+%% ------------------------------------------------------------------------
+%% EV Battery Charging Current
+%% ------------------------------------------------------------------------
+
 figure;
 plot(evCurrent.Values.Time, evCurrent.Values.Data, 'LineWidth', 2);
 title('EV Battery Charging Current');
@@ -65,7 +75,10 @@ xlabel('Time (s)');
 ylabel('Current (A)');
 grid on;
 
-% EV Battery State of Charge
+%% ------------------------------------------------------------------------
+%% EV Battery State of Charge (SOC)
+%% ------------------------------------------------------------------------
+
 figure;
 plot(evSOC.Values.Time, evSOC.Values.Data, 'LineWidth', 2);
 title('EV Battery State of Charge');
@@ -73,7 +86,10 @@ xlabel('Time (s)');
 ylabel('State of Charge (%)');
 grid on;
 
-% Portable Battery State of Charge
+%% ------------------------------------------------------------------------
+%% Portable Battery State of Charge (SOC)
+%% ------------------------------------------------------------------------
+
 figure;
 plot(portableSOC.Values.Time, portableSOC.Values.Data, 'LineWidth', 2);
 title('Portable Battery State of Charge');
@@ -81,7 +97,10 @@ xlabel('Time (s)');
 ylabel('State of Charge (%)');
 grid on;
 
-% EV Battery Temperature
+%% ------------------------------------------------------------------------
+%% EV Battery Temperature
+%% ------------------------------------------------------------------------
+
 figure;
 plot(batteryTemp.Values.Time, batteryTemp.Values.Data, 'LineWidth', 2);
 title('EV Battery Temperature');
@@ -89,7 +108,10 @@ xlabel('Time (s)');
 ylabel('Temperature (°C)');
 grid on;
 
-% IGBT Temperatures
+%% ------------------------------------------------------------------------
+%% IGBT Temperatures
+%% ------------------------------------------------------------------------
+
 figure;
 plot(junctionTemp.Values.Time, junctionTemp.Values.Data, 'LineWidth', 2);
 hold on;
@@ -103,7 +125,10 @@ ylabel('Temperature (°C)');
 legend('Junction','Case','Heatsink','Location','best');
 grid on;
 
-% Efficiency
+%% ------------------------------------------------------------------------
+%% Charging Efficiency
+%% ------------------------------------------------------------------------
+
 figure;
 plot(eff.Values.Time, eff.Values.Data, 'LineWidth', 2);
 title('Charging Efficiency');
@@ -111,9 +136,8 @@ xlabel('Time (s)');
 ylabel('Efficiency (%)');
 grid on;
 
-disp('Simulation completed successfully.');
 
 
 
 
-
+...

@@ -43,7 +43,7 @@ The system consists of an external battery to represent a portable emergency cha
 2. Make sure the repository was cloned successfully by running:
 
    ```bash
-   cd CC-CV-Portable-EV-Charging-System
+   cd CC-CV-Portable-EV-Charging-System or pwd 
    ```
 
 3. Open MATLAB. In the **Current Folder** panel, click the folder path at the top. Then click **C:**, go to **Users**, select your computer's username, and open the **CC-CV-Portable-EV-Charging-System** folder. You should now see the project files in the **Current Folder** panel.

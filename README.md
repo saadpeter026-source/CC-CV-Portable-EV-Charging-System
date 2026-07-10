@@ -41,8 +41,7 @@ The system consists of an external battery to represent a portable emergency cha
    ```bash
    git clone https://github.com/saadpeter026-source/CC-CV-Portable-EV-Charging-System.git
    ```
-
-2. Make sure you are inside the cloned repository by running:
+2. Make sure the repository was cloned successfully by running:
 
    ```bash
    cd CC-CV-Portable-EV-Charging-System

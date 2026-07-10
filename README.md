@@ -36,8 +36,6 @@ The system consists of an external battery to represent a portable emergency cha
 
 ## How to Run
 
-## How to Run
-
 1. Clone the repository by clicking the green **Code** button on the GitHub page and copying the **HTTPS URL. Make sure Git is installed. Then, in Git Bash or Command Prompt, run:
 
    ```bash

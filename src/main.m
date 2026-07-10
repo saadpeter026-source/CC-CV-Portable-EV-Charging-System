@@ -109,22 +109,39 @@ ylabel('Temperature (°C)');
 grid on;
 
 %% ------------------------------------------------------------------------
-%% IGBT Temperatures
+%% IGBT Junction Temperature
 %% ------------------------------------------------------------------------
 
 figure;
 plot(junctionTemp.Values.Time, junctionTemp.Values.Data, 'LineWidth', 2);
-hold on;
-plot(caseTemp.Values.Time, caseTemp.Values.Data, 'LineWidth', 2);
-plot(heatsinkTemp.Values.Time, heatsinkTemp.Values.Data, 'LineWidth', 2);
-hold off;
-
-title('IGBT Temperatures');
+title('IGBT Junction Temperature');
 xlabel('Time (s)');
 ylabel('Temperature (°C)');
-legend('Junction','Case','Heatsink','Location','best');
 grid on;
 
+
+%% ------------------------------------------------------------------------
+%% IGBT Case Temperature
+%% ------------------------------------------------------------------------
+
+figure;
+plot(caseTemp.Values.Time, caseTemp.Values.Data, 'LineWidth', 2);
+title('IGBT Case Temperature');
+xlabel('Time (s)');
+ylabel('Temperature (°C)');
+grid on;
+
+
+%% ------------------------------------------------------------------------
+%% IGBT Heatsink Temperature
+%% ------------------------------------------------------------------------
+
+figure;
+plot(heatsinkTemp.Values.Time, heatsinkTemp.Values.Data, 'LineWidth', 2);
+title('IGBT Heatsink Temperature');
+xlabel('Time (s)');
+ylabel('Temperature (°C)');
+grid on;
 %% ------------------------------------------------------------------------
 %% Charging Efficiency
 %% ------------------------------------------------------------------------

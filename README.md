@@ -36,7 +36,7 @@ The system consists of an external battery to represent a portable emergency cha
 
 ## How to Run
 
-1. Clone the repository by clicking the green **Code** button on the GitHub page and copying the **HTTPS URL. Make sure Git is installed. Then, in Git Bash or Command Prompt, run:
+1. Clone the repository by clicking the green **Code** button on the GitHub page and copying the **HTTPS URL**. Make sure Git is installed. Then, in Git Bash or Command Prompt, or run:
 
    ```bash
    git clone https://github.com/saadpeter026-source/CC-CV-Portable-EV-Charging-System.git

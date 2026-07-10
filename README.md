@@ -36,21 +36,23 @@ The system consists of an external battery to represent a portable emergency cha
 
 ## How to Run
 
-1. Clone the repository by clicking the green Code button on the GitHub page and copying the HTTPS URL. Then, in Git Bash (make sure you have git insalled)
+## How to Run
+
+1. Clone the repository by clicking the green **Code** button on the GitHub page and copying the **HTTPS URL. Make sure Git is installed. Then, in Git Bash or Command Prompt, run:
 
    ```bash
    git clone https://github.com/saadpeter026-source/CC-CV-Portable-EV-Charging-System.git
    ```
 
-2. Navigate to the cloned repository:
+2. Make sure you are inside the cloned repository by running:
 
    ```bash
    cd CC-CV-Portable-EV-Charging-System
    ```
 
-3. Open MATLAB and set the Current Folder to the cloned repository.
+3. Open MATLAB. In the **Current Folder** panel, click the folder path at the top. Then click **C:**, go to **Users**, select your computer's username, and open the **CC-CV-Portable-EV-Charging-System** folder. You should now see the project files in the **Current Folder** panel.
 
-4. Run the project by opening src/main.m and clicking Run, or enter the following command in the MATLAB Command Window:
+4. Open the **src** folder and open **main.m**. Click **Run** at the top, or type the following in the MATLAB Command Window:
 
    ```matlab
    run("src/main.m")

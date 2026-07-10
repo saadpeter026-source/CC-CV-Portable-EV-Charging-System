@@ -34,11 +34,29 @@ The system consists of an external battery to represent a portable emergency cha
 | Simscape Electrical |
 | Stateflow |
 
-## How to Run the Project
+## How to Run
 
-1. Go to test folder, download the Simulink model (`Portable_Charging_System_Test_2.slx`).
-2. Go to src folder, download the initialization script (`main.m`).
-3. Run `main.m`. The script automatically loads all required parameters and opens the Simulink model, allowing you to run the simulation.
+1. Clone the repository by clicking the green Code button on the GitHub page and copying the HTTPS URL. Then, in Git Bash or Command Prompt, run:
+
+   ```bash
+   git clone https://github.com/saadpeter026-source/CC-CV-Portable-EV-Charging-System.git
+   ```
+
+2. Navigate to the cloned repository:
+
+   ```bash
+   cd CC-CV-Portable-EV-Charging-System
+   ```
+
+3. Open MATLAB and set the Current Folder to the cloned repository.
+
+4. Run the project by opening src/main.m and clicking Run, or enter the following command in the MATLAB Command Window:
+
+   ```matlab
+   run("src/main.m")
+   ```
+
+5. The script will automatically open the Simulink model, run the simulation, and display the results.
 
 ## System-Level Architecture (Block Level)
 The figure below illustrates the closed-loop control system architecture of the portable EV charging system.

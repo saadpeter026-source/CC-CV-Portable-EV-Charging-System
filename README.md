@@ -43,18 +43,24 @@ The system consists of an external battery to represent a portable emergency cha
 2. Make sure the repository was cloned successfully by running:
 
    ```bash
-   cd CC-CV-Portable-EV-Charging-System or pwd 
+   cd CC-CV-Portable-EV-Charging-System
    ```
 
-3. Open MATLAB. In the **Current Folder** panel, click the folder path at the top. Then click **C:**, go to **Users**, select your computer's username, and open the **CC-CV-Portable-EV-Charging-System** folder. You should now see the project files in the **Current Folder** panel.
+   or
 
-4. Open the **src** folder and open **main.m**. Click **Run** at the top, or type the following in the MATLAB Command Window:
+   ```bash
+   pwd
+   ```
+
+4. Open MATLAB. In the **Current Folder** panel, click the folder path at the top. Then click **C:**, go to **Users**, select your computer's username, and open the **CC-CV-Portable-EV-Charging-System** folder. You should now see the project files in the **Current Folder** panel.
+
+5. Open the **src** folder and open **main.m**. Click **Run** at the top, or type the following in the MATLAB Command Window:
 
    ```matlab
    run("src/main.m")
    ```
 
-5. The script will automatically open the Simulink model, run the simulation, and display the results.
+6. The script will automatically open the Simulink model, run the simulation, and display the results.
 
 ## System-Level Architecture (Block Level)
 The figure below illustrates the closed-loop control system architecture of the portable EV charging system.
